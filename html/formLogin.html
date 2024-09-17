@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and register Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Website/AmeyyOnlineShop/css/styleLoginForm.css">
+    <script src="/Website/AmeyyOnlineShop/Js/scriptFormLogin.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title-login">Form Login</div>
+            <div class="title-signup">Form Registrtasi</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-control">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signUp" checked>
+                <label for="login" class="slide-login" id="">Login</label>
+                <label for="signup" class="slide-login " id="">SignUp</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                            <div class="field">
+                                <input type="text" placeholder="Masukan Email">
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Masukan Password">
+                            </div>
+                            <div class="pass-link"><a href="#">Lupa password?</a></div>
+                            <div class="field-btn">
+                                <div class="btn-player"></div> 
+                                <input type="submit" value="login">
+                            </div>
+                            <div class="signup-link">Belum punya akun?<a href="#">Daftar</a></div>
+                        </form>
+                        <form action="#" class="signup">
+                            <div class="field">
+                                <input type="text" placeholder="Nama Lengkap">
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Masukan Email">
+                            </div>
+                            <div class="field">
+                                <input type="password" placeholder="Masukan Password">
+                            </div>
+                            <div class="field-btn">
+                                <div class="btn-player"></div>
+                                <input type="submit" value="Daftar">
+                            </div>
+                            <div class="singup-link">Sudah Punya akun?<a href="#">Login</a></div>
+                        </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

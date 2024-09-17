@@ -1,0 +1,111 @@
+:root {
+    --utama1: #ff7f00;
+    --utama2: #010101;
+    --sekuder1: #f0f0f0;
+    --sekuder2: #333;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: var(--utama1);
+    background-image: linear-gradient(62deg, var(--utama1), #e0c3fc 100%);
+}
+
+::selection{
+    background: #994e03;
+    color: #fff;
+}
+
+.wrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(35, 57, 77)0px 20px 30px -10px;
+}
+.wrapper .title-text{
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, -0.265, 1.);
+}
+
+.wrapper .slide-control{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.slide-control .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.slide-control label .signup{
+    color: #000;
+}
+
+.slide-control .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #003366,  #004080, #0e5963, #0000 );
+    transition: all 0.6s cubic-bezier(0.68, -0.55, -0.265, 1.);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#signup:checked ~ .slider-tab{
+    left: 50%;
+}
+
+#signup:checked ~ label .login{
+    color: #000;
+}
+#login:checked ~ label .signup{
+    color: #000;
+}
+#login:checked ~ label .login{
+    cursor: default;
+    user-select: none;
+}
+
+/* .signup {
+    display: none; /* Hides the signup form initially */
+  /* } */ 

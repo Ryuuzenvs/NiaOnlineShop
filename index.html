@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form NiaOnlineShop</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- buat foto menjadi logo web -->
+   <link rel="icon" href="IMG-20240828-WA0004-modified.png" type="image/png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="page">
+  <div class="container">
+    <div class="left">
+      <div class="login">Login</div>
+      <div class="eula">Dengan masuk, Anda menyetujui <a class="copyright" href="https://www.termsfeed.com/live/67305a77-2bf3-4830-a163-643eea433a41" target="_blank">Kebijakan Privasi Kami</a></div>
+    </div>
+    <div class="right">
+      <svg viewBox="0 0 320 300">
+        <defs>
+          <linearGradient
+                          inkscape:collect="always"
+                          id="linearGradient"
+                          x1="13"
+                          y1="193.49992"
+                          x2="307"
+                          y2="193.49992"
+                          gradientUnits="userSpaceOnUse">
+            <stop
+                  style="stop-color:#ff00ff;"
+                  offset="0"
+                  id="stop876" />
+            <stop
+                  style="stop-color:#ff0000;"
+                  offset="1"
+                  id="stop878" />
+          </linearGradient>
+        </defs>
+        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+      </svg>
+      <div class="form">
+        <form action="html/dashboard.html" method="post" id="formlogin" >
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" id="email" name="email">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" id="password" name="password">
+          <input type="submit" id="submit" value="Login" onclick="redirectToDashboard()">
+        </form>
+        
+        <form action="process_signup.php" method="post" id="formsignup">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" id="email" name="email">
+          <label for="password"><strong>Password</strong></label>
+          <input type="password" id="password" name="password">
+          <input type="submit" id="signup" value="Signup">
+        </form>
+        <!-- setelah menekan tombol submit, akan langsung mengarah ke dashboard -->
+        <!-- <input type="submit" id="submit" value="Login" onclick="redirectToDashboard()"> -->
+        <input type="submit" id="signup" value="Signup" onclick="">
+        <br>
+        <p id="daftar2"><strong >Belum punya akun?</strong><a href="#" id="daftar1" onclick="setDaftar(true)">Daftar</a></p>
+        <p id="login"><strong >Sudah Punya akun?</strong><a href="#" id="login1" onclick="setLogin(true)">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script><script  src="./script.js"></script>
+  <script>
+    // debug antiscroll
+  const menuLinks = document.querySelectorAll('a[href^="#"]');
+
+  menuLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Cegah scroll ke atas
+    const targetId = link.getAttribute("href");
+
+    const targetElement = document.getElementById(targetId.slice(1)); // Hapus karakter "#"
+
+    if (targetElement) {
+      // Scroll ke elemen yang diinginkan dengan animasi (opsional)
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+    // end debug
+    function redirectToDashboard() {
+      // Tambahkan delay 500 milidetik (0.5 detik)
+      setTimeout(() => {
+        window.location.href = 'html/dashboard.html';
+      }, 500);
+    }
+    // const daftar1 = document.querySelector('#daftar1');
+const loginForm = document.querySelector('#formlogin');
+const signupForm = document.querySelector('#formsignup');
+const login = document.querySelector('#login');
+const login1 = document.querySelector('#login1');
+const daftar2 = document.querySelector('#daftar2');
+const signupbtn = document.querySelector('#signup');
+
+// daftar1.addEventListener('click', () => {
+// });
+
+// if(setDaftar == true){
+// }
+
+function setDaftar(daftar){
+  if(daftar){
+  loginForm.classList.add('active');
+  signupForm.classList.add('active');
+  login.classList.add('active');
+  login1.classList.add('active');
+  daftar2.classList.add('active');
+  signupbtn.classList.add('active');
+  console.log("diteken")
+  }
+}
+function setLogin(login2){
+  if(login2){
+  loginForm.classList.remove('active'); // Tanpa titik (".")
+  signupForm.classList.remove('active');
+  login.classList.remove('active');
+  login1.classList.remove('active');
+  daftar2.classList.remove('active');
+  signupbtn.classList.remove('active');
+  }
+}
+  </script>
+  <script>
+    // ... (kode JavaScript lainnya)
+
+// const loginForm = document.querySelector('#formlogin');
+// const signupForm = document.querySelector('#formsignup');
+
+// loginForm.addEventListener('submit', (event) => {
+//   const email = document.getElementById('email').value;
+//   const password = document.getElementById('password').value;
+
+//   if (email === '' || password === '') {
+//     event.preventDefault(); // Mencegah form dikirim
+//     alert('Harap isi email dan password');
+//   }
+// });
+
+// Lakukan hal yang sama untuk form signup
+signupForm.addEventListener('submit', (event) => {
+  // ... validasi yang sama
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+});
+
+// redictodashboard
+
+// function redirectToDashboard() {
+//       // Tambahkan delay 500 milidetik (0.5 detik)
+//       setTimeout(() => {
+//         window.location.href = 'html/dashboard.html';
+//       }, 500);
+//     }
+    
+  </script>
+</body>
+</html>

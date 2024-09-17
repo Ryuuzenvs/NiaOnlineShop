@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiaOnlineShop</title>
+    <!-- membuat foto Screenshot 2024-08-19 081227.ico menjadi icon web -->
+    <link rel="icon" type="image/x-icon" href="IMG-20240828-WA0004-modified.png"type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- membuat icon favicon -->
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+     </div>
+    <!-- Header -->
+     <div class="header" id="home">
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="nav-brand"><h1><a href="../index.html">Nia<span>OnlineShop</span></a></h1></div>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#daily_market">Daily Market</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="nav-extra">
+                    <div class="shopping-cart">
+                        <div class="shopping-cart-item" data-product-id="produk-1">
+                            <span class="product-name">Milk Shake drink</span>
+                            <span class="product-price">Rp 10000</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-2">
+                            <span class="product-name">Bucket Hat</span>
+                            <span class="product-price">Rp 49999</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-3">
+                            <span class="product-name">Buah-buahan manis</span>
+                            <span class="product-price">Rp 12000</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-4">
+                            <span class="product-name">Coffee mocaccino</span>
+                            <span class="product-price">Rp 15000</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-5">
+                            <span class="product-name">Coffe iconis T-shirt</span>
+                            <span class="product-price">Rp 74999</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-6">
+                            <span class="product-name">Sepatu Nike</span>
+                            <span class="product-price">Rp 199999</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-7">
+                            <span class="product-name">Mobile phone</span>
+                            <span class="product-price">Rp 2498999</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="shopping-cart-item" data-product-id="produk-8">
+                            <span class="product-name">Ryyzn Laptop</span>
+                            <span class="product-price">Rp 599000</span>
+                            <div class="quantity-control">
+                              <a href="#" class="decrease-btn"><i data-feather="minus"></i></a>
+                              <span class="quantity">0</span>
+                              <a href="#" class="increase-btn"><i data-feather="plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="total-price"><span>Rp 0</span></div>
+                      <button class="buy-button">Beli</button>
+                    </div>
+                    <span class="pemisah">
+                        <a href="#" class="toggle-button" onclick="setDarkMode(true)"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff7f00"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg></a>
+                    </span>
+                    <span class="pemisah1">
+                        <input type="text" id="search-input" class="hidden nonaktif" placeholder="Cari keywords...">
+                    </span>
+                    <a href="#" id="search"><i data-feather="search"></i></a>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" id="ham-menu"><i data-feather="menu"></i></a>
+                </div>
+            </nav>
+        </div>
+     </div>
+    <!-- end header -->
+    <!-- hero -->
+     <div class="hero" id="menu">
+        <div class="container">
+            <div class="row ai-center">
+                <div class="col6">
+                    <div class="hero-desc">
+                        <h1 class="animated-heading">NiaOnlineShop <span>Sudah menjadi OnlineShop terpercaya dan ramah bisnis.</span></h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vitae dicta, dolore doloribus atque autem dignissimos molestiae numquam nemo harum voluptatem facilis temporibus, molestias perspiciatis! <span class="tebal1">Jangan Lupa kunjungi Developer nya yah^^</span></p>
+                        <a href="https://ryuuzenvs.github.io/WebsitePersonalRyuu/" class="cta" target="_blank"><img src="../img/ppWebPorto.png" alt="" class="" width="20" height="20"></a>
+                        <div class="spacer30"></div>
+                        <a href="#daily_market" class="btn">Daily Market</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1149/1149305.png" alt="" class="img-responsive">
+                    <img src="../img/imageedit_1_4639786826.png" alt="" class="img-responsive1">
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- end hero -->
+    <!-- Produk -->
+     <div class="produk" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWlsa3NoYWtlfGVufDB8fDB8fHww" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Milk Shake drink</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 10.000
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://images.unsplash.com/photo-1595642527925-4d41cb781653?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGF0fGVufDB8fDB8fHww" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Bucket Hat</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 49.999
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://images.unsplash.com/photo-1516002484455-c1618f088baa?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFya2V0JTIwcHJvZHVrfGVufDB8fDB8fHww" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Buah-Buahan manis</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 12.000
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://media.istockphoto.com/id/1862460349/id/foto/secangkir-latte-dan-matcha-latte-di-atas-meja-putih.jpg?s=612x612&w=0&k=20&c=hEKW8EFxsRQbd6ISHYfRr5VGExIp_0ps7mSDcDnxonY=" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Coffee mocaccino</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 15.000
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://media.istockphoto.com/id/1652009244/id/foto/panas-transfer-t-pencetakan-kemeja.jpg?s=1024x1024&w=is&k=20&c=N5QJlopXbrg_mp4t_-6XfldmsnueAai3XZbMkXnShSI=" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Coffee iconic T-Shirt</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 74.999
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Sepatu nike</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 199.999
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1680985551009-05107cd2752c?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Mobile phone</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 2.498.999
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="col3" id="daily_market">
+                    <div class="food-card">
+                        <div class="fc-image">
+                            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?q=80&w=1532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <h3>Ryyzn Laptop</h3>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="fc-price">
+                            <div class="price-tag"></div>
+                            <div class="price-num">
+                                Rp 5.999.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- end produk -->
+    <!-- footer -->
+     <div class="footer" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <div class="footer-desc">
+                        <h3>
+                            Front-End Web Dev
+                        </h3>
+                        <p>
+                            Website ini sepenuhnya di buat oleh Frond-End Web dev
+                        </p>
+                    </div>
+                </div>
+                <div class="col4">
+                    <h3>
+                        Need Help?
+                    </h3>
+                    <ul>
+                        <li><a href=""></a>Franchise</li>
+                        <li><a href=""></a>Partnership</li>
+                        <li><a href=""></a>Contact</li>
+                    </ul>
+                </div>
+                <div class="col4">
+                    <h3>Follow us</h3>
+                    <a href="https://www.instagram.com/ryuuzenvs" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="" height="20"></a>
+                    <a href="https://api.whatsapp.com/send?phone=6285767292629" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/4423/4423697.png" alt="" height="20"></a>
+                    <a href="https://www.tiktok.com/@ryuuzen_vv?lang=id-ID" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/15713/15713399.png" alt="" height="20" width="20"></a>
+                </div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXc6oOOnkw6CjoIY5/oMfrzSBtHFA0S2I" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa fa-copyright"></i> <span id="currentYear"></span><p><strong>Copyright © 2024 AmelOnlineShop. All rights reserved .</p></strong></p>
+          <a href="https://www.termsfeed.com/live/67305a77-2bf3-4830-a163-643eea433a41" target="_blank">Kebijakan Privasi</a>
+        </div>
+     </div>
+    <!-- end footer -->
+    <!-- feather icon -->
+    <script>
+        feather.replace();
+    </script>
+    <script src="../Js/script.js"></script>
+</body>
+</html>
